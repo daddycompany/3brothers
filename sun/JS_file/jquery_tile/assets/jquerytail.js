@@ -25,6 +25,7 @@ sun_imageTileClass.imageTile=function (targetData,targetId) {
 };
 
 sun_imageTileClass.imgArray=function (targetId){
+    console.log(targetId)
     sun_imageTileClass.lengthValue = sun_imageTileClass.imgClass.length
     sun_imageTileClass.intvalue = Math.sqrt(sun_imageTileClass.imgClass.length)
     sun_imageTileClass.parseIntValue=parseInt(sun_imageTileClass.intvalue);
@@ -38,7 +39,7 @@ sun_imageTileClass.imgArray=function (targetId){
         }
         for (sun_imageTileClass.j = 0; sun_imageTileClass.j<sun_imageTileClass.limitValue; sun_imageTileClass.j++) {
             $("#"+targetId).append("<div id='smallBox" + sun_imageTileClass.j + "' class='smallboxClass'></div>")
-            $("#smallBox" + sun_imageTileClass.j).append("<div class='smallboxImg' style=background-image:url('" + sun_imageTileClass.imgClass[sun_imageTileClass.j] + "')></div>")
+            $("#smallBox" + sun_imageTileClass.j).append("<div class='smallboxImg' style=position:relative;width:100%;height:100%;background-size:cover;background-position:center;background-image:url('" + sun_imageTileClass.imgClass[sun_imageTileClass.j] + "')></div>")
         }
         if (sun_imageTileClass.j == sun_imageTileClass.limitValue) {
             console.log("load complete")
