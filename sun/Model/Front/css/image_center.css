@@ -1,0 +1,21 @@
+
+.tool_image{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top:50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -125px;
+    z-index: 1;
+}
+
+
+
+.center_Img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
